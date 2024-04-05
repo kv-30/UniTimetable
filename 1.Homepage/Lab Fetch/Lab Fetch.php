@@ -82,6 +82,11 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
         echo "</tr>";
     }
     echo "</table>";
+    // Add a download button
+    echo "<form method='post' action='download.php'>";
+    echo "<input type='hidden' name='labname' value='$labName'>";
+    echo "<input type='submit' value='Download'>";
+    echo "</form>";
 }
 ?>
 
