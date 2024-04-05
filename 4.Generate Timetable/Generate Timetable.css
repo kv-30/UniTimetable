@@ -8,12 +8,14 @@
 body {
     font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
     background-color: #000; /* Set background color to black */
+    background-image: url('/UniTimetable/img/bg.jpeg'); /* Add background image */
+    background-size: cover; /* Maintain aspect ratio and fit the entire image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
     color: #fff; /* Set text color to white */
-    background-image: url('/UniTimetable/img/bg.jpeg');
 }
 
 header {
-    
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -34,7 +36,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #fff; /* Set link color to white */
 }
 
 .hero {
@@ -58,9 +60,8 @@ nav ul li a {
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-gap: 20px; /* Gap between grid items */
+    display: block; /* Change display to block to stack buttons vertically */
+    margin-top: 20px; /* Add margin to separate buttons */
 }
 
 .button {
@@ -79,14 +80,15 @@ nav ul li a {
     color: #fff; /* White text color for buttons */
     padding: 10px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-top: 10px;
     cursor: pointer;
-    width: 100%;
-    
+    width: 50%;
     text-align: center;
     transition: background-color 0.3s ease;
-    
+    text-decoration: none; /* Remove underline */
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .button button:hover {
@@ -94,7 +96,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for footer */
+    background-color:none ;
     color: #fff;
     text-align: center;
     padding: 20px 0;

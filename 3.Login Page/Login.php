@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['username'] = $user['username'];
         
         // Redirect to a logged-in page
-        header('Location: welcome.php');
+        header('Location: http://localhost:3000/UniTimetable/4.Generate%20Timetable/Generate%20Timetable.html');
         exit;
     } else {
         $error = "Invalid username or password";
