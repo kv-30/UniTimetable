@@ -13,9 +13,9 @@
 
     <nav>
         <ul>
-         <li><a href="http://127.0.0.1:5500/1.Homepage/Homepage.html">Home</a></li>
-         <li><a href="http://localhost:3000/3.Login%20Page/Login.php">Login</a></li>
-         <li><a href="http://localhost:3000/2.About%20Page/About.html">About</a></li>
+         <li><a href="http://127.0.0.1:5500/UniTimetable/1.Homepage/Homepage.html">Home</a></li>
+         <li><a href="http://localhost:3000/UniTimetable/3.Login%20Page/Login.php">Login</a></li>
+         <li><a href="http://localhost:3000/UniTimetable/2.About%20Page/About.html">About</a></li>
         </ul>
     </nav>
 </header>

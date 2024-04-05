@@ -8,7 +8,7 @@
 body {
     font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
     background-color: #000; /* Set background color to black */
-    background-image: url('/img/bg.jpeg'); /* Add background image */
+    background-image: url('/UniTimetable/img/bg.jpeg'); /* Add background image */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the background image */
     color: #fff; /* Set text color to white */
