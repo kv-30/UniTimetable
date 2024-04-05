@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css">
+    <title>College Timetable Creator</title>
+</head>
+<body>
+    <header>
+        <h1 id="pageTitle">PICT Timetable Creator</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/1.Homepage/Homepage.html">Home</a></li>
+                <li><a href="http://localhost:3000/3.Login%20Page/Login.php">Login</a></li>
+                <li><a href="http://localhost:3000/2.About%20Page/About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <hr><br>
+            <h2>Department of First Year Engineering</h2><hr>
+            <br>
+            <div class="button-group">
+                <div class="button-container">
+                    <button class="toggle-btn" data-target="View">View Timetable</button>
+                    <div class="button-group sub-buttons" id="View" style="display: none;">
+                        <div class="button-group__section">
+                            <button class="toggle-btn"><a href="http://localhost:3000/1.Homepage/Lab%20Fetch/Lab%20Fetch.php" target="_blank">Labs</a></button>
+                            <button class="toggle-btn"><a href="http://localhost:3000/1.Homepage/FE%20Classes%20Fetch/Fe%20Classes%20Fetch.php" target="_blank">FE Classes</a></button>
+                            <button class="toggle-btn"><a href="http://localhost:3000/4.Generate%20Timetable/Teacher%20Timetable/Teacher%20Timetable.php" target="_blank">Teachers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="toggle-btn" data-target="Generate">Generate Timetable</button>
+                    <div class="button-group sub-buttons" id="Generate" style="display: none;">
+                        <div class="button-group__section">
+                            <button class="toggle-btn"><a href="http://localhost:3000/4.Generate%20Timetable/Lab%20Timetable/Lab%20Timetable.php" target="_blank">LAB</a></button>
+                            <button class="toggle-btn"><a href="#" target="_blank">CLASSROOM</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PICT Timetable Creator. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var toggleButtons = document.querySelectorAll('.toggle-btn');
+            var currentToggle = null;
+
+            toggleButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var target = button.getAttribute('data-target');
+                    var targetElement = document.getElementById(target);
+
+                    if (targetElement) {
+                        var isHidden = targetElement.style.display === 'none';
+
+                        // Close currently opened toggle if any
+                        if (currentToggle && currentToggle !== targetElement) {
+                            currentToggle.style.display = 'none';
+                        }
+
+                        if (isHidden) {
+                            targetElement.style.display = 'block';
+                            currentToggle = targetElement;
+                        } else {
+                            targetElement.style.display = 'none';
+                            currentToggle = null;
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

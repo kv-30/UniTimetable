@@ -1,0 +1,123 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
+    background-color: #000; /* Set background color to black */
+    background-image: url('/img/bg.jpeg'); /* Add background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white */
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button-group__section {
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.button-group__section:last-child {
+    margin-right: 0;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 300px; /* Adjust the width of the input boxes */
+    padding: 15px; /* Increase padding for larger input boxes */
+    margin: 10px 0; /* Adjust margin for spacing between input boxes */
+    border-radius: 8px; /* Add border radius for rounded edges */
+    border: 1px solid #ccc; /* Add border for visual clarity */
+}
+
+button {
+    background-color: #007bff; /* fallback */
+    background-color: rgba(0, 123, 255, 0.8); /* transparent blue */
+    color: #fff;
+    padding: 15px 30px; /* Increase padding for larger buttons */
+    text-decoration: none;
+    border-radius: 8px; /* Increase border radius for rounded edges */
+    transition: background-color 0.3s ease;
+    margin: 10px 0; /* Adjust margin for better spacing */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+}
+
+button:hover {
+    background-color: #0056b3; /* darker blue on hover */
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

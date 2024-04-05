@@ -1,0 +1,103 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
+    background-color: #000; /* Set background color to black */
+    background-image: url('/img/bg.jpeg'); /* Add background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white */
+    display: flex;
+    flex-direction: column; /* Align header and form vertically */
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensure header spans the entire width of the viewport */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+form {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for form */
+    max-width: 300px; /* Decrease horizontal length of form */
+    border-radius: 20px; /* Make the form container oblong */
+    margin: auto; /* Center the form horizontally */
+    text-align: center; /* Center the content of the form */
+}
+
+label,
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%; /* Make the input fields fill the entire width of the form */
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px; /* Adjust padding for input fields */
+    border-radius: 20px; /* Make input fields oblong */
+}
+
+input[type="submit"] {
+    width: 70%; /* Adjust width of the submit button */
+    padding: 10px; /* Adjust padding for submit button */
+    border-radius: 20px; /* Make submit button oblong */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #007bff; /* fallback */
+    background-color: rgba(0, 123, 255, 0.8); /* transparent blue */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin: auto; /* Center the button horizontally */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* darker blue on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.error-message {
+    color: red;
+}

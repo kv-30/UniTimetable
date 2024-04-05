@@ -1,0 +1,112 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    background-image: url('/img/bg.jpeg');
+    background-size: cover; /* Cover the entire viewport */
+    height: 100%; /* Set body height to 100% of viewport height */
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Set link color to white */
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0; /* Adjusted padding */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px; /* Adjusted width */
+    height: 200px; /* Maximum height */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 50%; /* Circular border radius */
+}
+
+.team-member button {
+    background-color: #007bff; /* Blue background color for buttons */
+    color: #fff; /* White text color for buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.team-member button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.team-member .member-info h3 {
+    font-weight: normal; /* Make member names non-bold */
+}
+
+.linkedin-logo,
+.github-logo {
+    font-size: 20px; /* Adjust font size to increase logo size */
+    width: 30px; /* Adjust width to increase size */
+    height: auto;
+    margin-top: 5px; /* Adjust vertical alignment */
+    color: #fff; /* White color for the logos */
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

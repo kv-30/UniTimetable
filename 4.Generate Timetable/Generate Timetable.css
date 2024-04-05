@@ -1,0 +1,101 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    background-image: url('/img/bg.jpeg');
+}
+
+header {
+    
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+.button {
+    text-align: center;
+}
+
+.button img {
+    width: 100%; /* Adjusted width */
+    max-height: 200px; /* Maximum height */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 5px;
+}
+
+.button button {
+    background-color: #007bff; /* Blue background color for buttons */
+    color: #fff; /* White text color for buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    
+    text-align: center;
+    transition: background-color 0.3s ease;
+    
+}
+
+.button button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
