@@ -2,7 +2,7 @@
 // Database connection parameters
 $dsn = 'mysql:host=localhost;dbname=timetables';
 $username = 'root';
-$password = 'Spartabuddha_987';
+$password = 'password';
 
 // Attempt to connect to the database
 try {
