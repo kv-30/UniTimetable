@@ -210,7 +210,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
     echo "</table>";
 
     // Add the new timetable button
-    echo '<form action="Lab Timetable Generator.php" method="get">';
+    echo '<form action="Lab Timetable.php" method="get">';
     echo '<input type="submit" value="New Timetable" class="button">';
     echo '</form>';
 }
