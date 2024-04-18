@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
     // Database connection settings
     $servername = "localhost";
     $username = "root";
-    $password = "Spartabuddha_987";
+    $password = "password";
     $dbname = "timetables";
 
     // Create connection
